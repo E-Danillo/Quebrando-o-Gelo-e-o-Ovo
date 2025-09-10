@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 :root {
@@ -12,7 +13,11 @@
     --BrancoAzulado: #DCEAFF;
     --BrancoLeve: #EDEDED;
 
-    --EspaçamentoPequeno: 10px;
+    --EspaçamentoTexto: 10px;
+
+    --H1: 3rem;
+    --H2: 1.6rem;
+    --p: 1.25rem;
 }
 
 body {
@@ -22,60 +27,93 @@ body {
     line-height: 1.5;
 }
 
+
 header {
     display: flex;
     flex-direction: column;
-    height: 110vh;
+    height: 100vh;
     justify-content: center;
+    text-align: center;
 }
 
 header h1 {
-    font: bold 50px 'Special Elite';
+    font: bold 3rem 'Special Elite';
     text-align: center;
     text-transform: uppercase;
     color: var(--BrancoLeve);
 }
 
-header p {
-    text-align: center;
-    color: var(--Amarelo);
-}
-
 header h1, header p {
-    margin: var(--EspaçamentoPequeno);
+    margin: var(--EspaçamentoTexto);
 }
 
-section {
-    position: relative;
-    min-height: 100vh;
-    padding: var(--EspaçamentoPequeno);
-}
-
-.destaque {
+.destaque, ul, p {
     color: var(--Amarelo);
+}
+
+li {
+    color: var(--BrancoAzulado);
+
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    height: 100vh;
 }
 
 .apresentação {
     text-align: left;
     color: var(--AzulClaro);
-    padding: var(--EspaçamentoPequeno);
-    max-width: 300px;
+    padding: var(--EspaçamentoTexto);
+    max-width: 500px;
 }
 
-section h2 {
-    position: absolute;
-    left: 60%;
-    top: 30%;
+.box {
+    flex: 1;
+    text-align: center;
 }
 
-section p {
-    position: absolute;
-    left: 60%;
-    top: 45%;
+section {
+    display: flex;
+    justify-content: center; /* Centraliza as colunas */
+    align-items: center; /* Alinha verticalmente */
+    height: 100vh; /* Ocupa a altura total da tela */
+    gap: 5%; /* Adiciona um espaço entre as colunas */
 }
+
+.coluna-esquerda {
+    flex-basis: 45%; /* A coluna da imagem ocupa 45% do espaço */
+    text-align: center;
+}
+
+.coluna-direita {
+    display: flex;
+    flex-direction: column; /* Organiza o h2 e o p um abaixo do outro */
+    justify-content: center;
+    flex-basis: 50%; /* A coluna de texto ocupa 50% do espaço */
+}
+
+.apresentação {
+    text-align: left;
+    color: var(--AzulClaro);
+}
+
 
 section img {
-    position: absolute;
-    left: 15%;
-    top: 30%;
+    max-width: 100%;
+    padding-left: 20px;
 }
+
+#contato {
+    background-color: var(--AzulClaro);
+}
+
+#menu {
+    background-color: var(--AzulEscuro);
+}
+/*
+h1: 3rem
+h2: 1.6 rem
+p: 1.25rem
+*/
