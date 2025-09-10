@@ -1,0 +1,8 @@
+# Ignorar tudo fora da pasta do projeto
+../*
+../../*
+
+# Ignorar lixo do sistema
+Thumbs.db
+desktop.ini
+.DS_Store

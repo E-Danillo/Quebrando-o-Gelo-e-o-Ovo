@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --Amarelo: #FFFE3B;
+    --AzulEscuro: #01337D;
+    --AzulClaro: #19A5FF;
+    --BrancoAzulado: #DCEAFF;
+    --BrancoLeve: #EDEDED;
+
+    --EspaçamentoPequeno: 10px;
+}
+
+body {
+    background: var(--Amarelo) url(Imagens/FundoPrincipal.png) center/cover no-repeat;
+    height: 100vh;
+    font-family: 'Special Elite', Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+    justify-content: center;
+}
+
+header h1 {
+    font: bold 50px 'Special Elite';
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--BrancoLeve);
+}
+
+header p {
+    text-align: center;
+    color: var(--Amarelo);
+}
+
+header h1, header p {
+    margin: var(--EspaçamentoPequeno);
+}
+
+section {
+    position: relative;
+    min-height: 100vh;
+    padding: var(--EspaçamentoPequeno);
+}
+
+.destaque {
+    color: var(--Amarelo);
+}
+
+.apresentação {
+    text-align: left;
+    color: var(--AzulClaro);
+    padding: var(--EspaçamentoPequeno);
+    max-width: 300px;
+}
+
+section h2 {
+    position: absolute;
+    left: 60%;
+    top: 30%;
+}
+
+section p {
+    position: absolute;
+    left: 60%;
+    top: 45%;
+}
+
+section img {
+    position: absolute;
+    left: 15%;
+    top: 30%;
+}
