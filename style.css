@@ -22,7 +22,7 @@
 }
 
 body {
-    background: var(--Amarelo) url(Imagens/FundoPrincipal.png) center/cover no-repeat;
+    background: var(--Amarelo) url(imagens/FundoPrincipal.png) center/cover no-repeat;
     line-height: 1.5;
     height: 100vh;
     font-family: 'Chau Philomene One', Arial, Helvetica, sans-serif;
