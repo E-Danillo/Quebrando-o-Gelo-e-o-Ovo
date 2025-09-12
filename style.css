@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1');
+
 
 * {
     margin: 0px;
@@ -12,9 +13,9 @@
     --AzulClaro: #19A5FF;
     --BrancoAzulado: #DCEAFF;
     --BrancoLeve: #EDEDED;
-
+    
     --EspaçamentoTexto: 10px;
-
+    
     --H1: 3rem;
     --H2: 1.6rem;
     --p: 1.25rem;
@@ -22,11 +23,10 @@
 
 body {
     background: var(--Amarelo) url(Imagens/FundoPrincipal.png) center/cover no-repeat;
-    height: 100vh;
-    font-family: 'Special Elite', Arial, Helvetica, sans-serif;
     line-height: 1.5;
+    height: 100vh;
+    font-family: 'Chau Philomene One', Arial, Helvetica, sans-serif;
 }
-
 
 header {
     display: flex;
@@ -37,83 +37,131 @@ header {
 }
 
 header h1 {
-    font: bold 3rem 'Special Elite';
+    font-family: 'Chau Philomene One', Arial, Helvetica, sans-serif;
+    font-size: var(--H1);
+    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     color: var(--BrancoLeve);
-}
-
-header h1, header p {
     margin: var(--EspaçamentoTexto);
 }
 
-.destaque, ul, p {
+header p {
+    margin: var(--EspaçamentoTexto);
     color: var(--Amarelo);
 }
 
-li {
-    color: var(--BrancoAzulado);
-
+.destaque {
+    color: var(--Amarelo);
 }
+
 section {
     display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    height: 100vh;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    gap: 5%; 
 }
 
-.apresentação {
-    text-align: left;
-    color: var(--AzulClaro);
-    padding: var(--EspaçamentoTexto);
-    max-width: 500px;
+#apresentação img {
+    max-width: 100%;
+    margin-left: 10px;
 }
 
-.box {
+.boas-vindas {
     flex: 1;
-    text-align: center;
-}
-
-section {
-    display: flex;
-    justify-content: center; /* Centraliza as colunas */
-    align-items: center; /* Alinha verticalmente */
-    height: 100vh; /* Ocupa a altura total da tela */
-    gap: 5%; /* Adiciona um espaço entre as colunas */
+    text-align: justify;
+    color: var(--AzulClaro);
+    max-width: 400px;
+    margin: var(--EspaçamentoTexto);
 }
 
 .coluna-esquerda {
-    flex-basis: 45%; /* A coluna da imagem ocupa 45% do espaço */
+    flex-basis: 50%;
     text-align: center;
 }
 
 .coluna-direita {
     display: flex;
-    flex-direction: column; /* Organiza o h2 e o p um abaixo do outro */
+    flex-direction: column; 
     justify-content: center;
-    flex-basis: 50%; /* A coluna de texto ocupa 50% do espaço */
-}
-
-.apresentação {
-    text-align: left;
-    color: var(--AzulClaro);
-}
-
-
-section img {
-    max-width: 100%;
-    padding-left: 20px;
+    flex-basis: 50%; 
 }
 
 #contato {
     background-color: var(--AzulClaro);
 }
 
+#contato img {
+    max-width: 45%;
+    flex-basis: 50%;
+}
+
+#contato h2 {
+    color: var(--Amarelo);
+    margin: var(--EspaçamentoTexto);
+}
+
+#contato li, #contato a {
+    color: var(--Amarelo);
+    text-decoration: none;
+}
+
+#contato ul {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
+}
+
 #menu {
     background-color: var(--AzulEscuro);
 }
-/*
-h1: 3rem
-h2: 1.6 rem
-p: 1.25rem
-*/
+
+#menu ol, #menu li {
+    list-style-type: square;
+    color: var(--Amarelo);
+}
+
+
+#receita a, #receita li{
+    list-style: none;
+    color: var(--AzulEscuro);
+}
+
+#receita img {
+    max-width: 100%
+}
+
+#receita {
+    margin: var(--EspaçamentoTexto);
+    position: relative;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    max-width: 600px;
+    margin-right: 20px;       
+}
+
+.galeria img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--BrancoLeve);
+    color: var(--Amarelo);
+    text-decoration: none;
+    border-radius: 5px;
+    border: var(--AzulEscuro) 3px solid;
+    transition: background-color 0.3s ease;
+}
+
