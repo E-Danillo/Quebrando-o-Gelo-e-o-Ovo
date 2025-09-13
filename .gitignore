@@ -1,8 +1,12 @@
-# Ignorar tudo fora da pasta do projeto
-../*
-../../*
-
-# Ignorar lixo do sistema
-Thumbs.db
-desktop.ini
+# Sistema operacional
 .DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo

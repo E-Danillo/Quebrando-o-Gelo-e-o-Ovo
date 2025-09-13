@@ -199,3 +199,50 @@ section {
     position: absolute;
     border: var(--BrancoAzulado) 3px solid;
 }
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .coluna-esquerda, .coluna-direita {
+        flex-basis: 100%; 
+    }
+
+    #contato img {
+        max-width: 80%;
+        margin-bottom: 20px; 
+    }
+
+    .galeria {
+        grid-template-columns: 1fr; 
+        max-width: 100%; 
+        margin: 0 auto; 
+    }
+
+    #preparo {
+        padding: 10px;
+    }
+
+    #titulo-receita{
+        position: static;
+        font-size: var(--H2);
+        text-align: center;
+        margin-bottom: var(--EspaçamentoTexto);
+    }
+
+    .ing {
+        position: static;
+        font-size: var(--H2);
+        text-align: center;
+        margin-bottom: var(--EspaçamentoTexto);
+    }
+
+    #preparacao {
+        position: static;
+        border: var(--BrancoAzulado) 3px solid;
+        margin-top: var(--EspaçamentoTexto);
+    }
+}
