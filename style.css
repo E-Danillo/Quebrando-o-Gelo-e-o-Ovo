@@ -64,11 +64,11 @@ section {
     gap: 5%; 
 }
 
-#apresentação {
+#bem-vindo {
     background-color: var(--Amarelo);
 }
 
-#apresentação img {
+#bem-vindo img {
     max-width: 100%;
     margin-left: 10px;
 }
@@ -173,33 +173,45 @@ section {
     transition: background-color 0.3s ease;
 }
 
-#preparo {
-    position: relative;
-    background-color: var(--AzulClaro);
-    padding: 20px;
+#titulo-receita {
+    color: var(--BrancoLeve);
+    position: absolute;
+    top: 10px;
+    right: 20px; /* antes era left */
+    font-size: var(--H2);
+    z-index: 10;
 }
+
+.ing {
+    position: absolute;
+    top: 10px;
+    left: 20px; /* antes era right */
+    z-index: 10;
+}
+
 
 #preparo ul {
     list-style-type: none;
 }
 
-#titulo-receita{
-    position: absolute;
-    top: 130px;
-    font-size: var(--H2);
+#preparo {
+    position: relative;
+    background-color: var(--AzulEscuro);
+    padding: 20px;
+    border: 3px solid;
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
-.ing {
-    position: absolute;
-    top: 40px;
-    font-size: var(--H2);
+#ingredientes, #ModoDePreparo {
+    padding: 10px;
+    border: 3px solid var(--BrancoAzulado);
+    margin-bottom: 20px; 
+    padding-left: 30px;
 }
 
-#preparacao {
-    position: absolute;
-    border: var(--BrancoAzulado) 3px solid;
-}
-
+/*Responsividade para telas menores*/
 @media (max-width: 768px) {
     section {
         flex-direction: column;
@@ -226,11 +238,17 @@ section {
         padding: 10px;
     }
 
-    #titulo-receita{
-        position: static;
-        font-size: var(--H2);
+    #receita {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap; 
+    }
+
+    #titulo-receita, .ing {
+        position: relative;
         text-align: center;
-        margin-bottom: var(--EspaçamentoTexto);
+        margin-bottom: 10px;
     }
 
     .ing {
@@ -240,7 +258,7 @@ section {
         margin-bottom: var(--EspaçamentoTexto);
     }
 
-    #preparacao {
+    #ModoDePreparo {
         position: static;
         border: var(--BrancoAzulado) 3px solid;
         margin-top: var(--EspaçamentoTexto);
