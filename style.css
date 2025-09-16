@@ -221,6 +221,10 @@ section {
         padding: 20px; 
     }
 
+    header {
+        background-attachment: scroll;
+    }
+
     .coluna-esquerda, .coluna-direita {
         flex-basis: 100%; 
     }
