@@ -11,12 +11,10 @@
     --Amarelo: #d1d119;
     --AzulEscuro: #01337D;
     --AzulClaro: #19A5FF;
-    --BrancoAzulado: #DCEAFF;
-    --BrancoLeve: #EDEDED;
+    --CinzaLeitura: #EDEDED;
     
     --EspaçamentoTexto: 10px;
     
-    /* Tamanhos de fonte padronizados */
     --H1: 3rem;
     --H2: 1.8rem;
     --p: 1.4rem;
@@ -42,7 +40,7 @@ header {
 header h1 {
     font-size: var(--H1);
     text-transform: uppercase;
-    color: var(--BrancoLeve);
+    color: var(--CinzaLeitura);
     margin: var(--EspaçamentoTexto);
 }
 
@@ -93,19 +91,30 @@ section {
     flex-basis: 50%; 
 }
 
+#contato .coluna-esquerda,
+#contato .coluna-direita {
+    flex-basis: 45%;       
+    text-align: center;
+}
+
 #contato {
+    display: flex;
+    flex-wrap: wrap;     
+    justify-content: space-around;
+    align-items: center;  
+    padding: 40px 20px;
     background-color: var(--AzulClaro);
 }
 
 #contato img {
-    max-width: 45%;
-    flex-basis: 50%;
+    width: 100%;
+    height: 400px;       
+    object-fit: contain;  
 }
 
 #contato h2 {
     color: var(--Amarelo);
     margin: var(--EspaçamentoTexto);
-    /* Usando a variável H2 para padronizar o tamanho */
     font-size: var(--H2);
 }
 
@@ -165,7 +174,7 @@ section {
 .botao {
     display: inline-block;
     padding: 10px 20px;
-    background-color: var(--BrancoLeve);
+    background-color: var(--CinzaLeitura);
     color: var(--AzulEscuro);
     text-decoration: none;
     border-radius: 5px;
@@ -174,10 +183,10 @@ section {
 }
 
 #titulo-receita {
-    color: var(--BrancoLeve);
+    color: var(--CinzaLeitura);
     position: absolute;
     top: 10px;
-    right: 20px; /* antes era left */
+    right: 20px; 
     font-size: var(--H2);
     z-index: 10;
 }
@@ -185,18 +194,14 @@ section {
 .ing {
     position: absolute;
     top: 10px;
-    left: 20px; /* antes era right */
+    left: 20px; 
     z-index: 10;
-}
-
-
-#preparo ul {
-    list-style-type: none;
 }
 
 #preparo {
     position: relative;
     background-color: var(--AzulEscuro);
+    color: var(--CinzaLeitura);
     padding: 20px;
     border: 3px solid;
     width: 90%;
@@ -206,12 +211,11 @@ section {
 
 #ingredientes, #ModoDePreparo {
     padding: 10px;
-    border: 3px solid var(--BrancoAzulado);
+    border: 3px solid var(--CinzaLeitura);
     margin-bottom: 20px; 
     padding-left: 30px;
 }
 
-/*Responsividade para telas menores*/
 @media (max-width: 768px) {
     section {
         flex-direction: column;
@@ -223,16 +227,16 @@ section {
         flex-basis: 100%; 
     }
 
-    #contato img {
-        max-width: 80%;
-        margin-bottom: 20px; 
+    #contato {
+        flex-direction: column; 
+        gap: 20px;
+        padding: 20px;
     }
 
-    .galeria {
-        grid-template-columns: 1fr; 
-        max-width: 100%; 
-        margin: 0 auto; 
-    }
+    #contato img {
+        max-width: 80%;       
+        margin: 0 auto;     
+} 
 
     #preparo {
         padding: 10px;
@@ -260,7 +264,7 @@ section {
 
     #ModoDePreparo {
         position: static;
-        border: var(--BrancoAzulado) 3px solid;
+        border: var(--CinzaLeitura) 3px solid;
         margin-top: var(--EspaçamentoTexto);
     }
 }
