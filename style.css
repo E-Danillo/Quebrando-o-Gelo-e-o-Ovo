@@ -27,7 +27,7 @@ body {
 }
 
 header {
-    background: var(--Amarelo) url(imagens/Background.webp) center/cover no-repeat;
+    background: var(--Amarelo) url('imagens/background.webp') center/cover no-repeat;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -260,7 +260,7 @@ section {
         margin-bottom: var(--EspaçamentoTexto);
     }
 
-    #ModoDePreparo {
+    #mododepreparo {
         position: static;
         border: var(--CinzaLeitura) 3px solid;
         margin-top: var(--EspaçamentoTexto);
