@@ -27,7 +27,7 @@ body {
 }
 
 header {
-    background: var(--Amarelo) url(imagens/Background.webP) center/cover no-repeat;
+    background: var(--Amarelo) url(imagens/Background.webp) center/cover no-repeat;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
