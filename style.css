@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1');
 
-
 * {
     margin: 0px;
     padding: 0px;
@@ -24,12 +23,12 @@ body {
     background-color: var(--Amarelo);
     line-height: 1.5;
     font-family: 'Chau Philomene One', Arial, Helvetica, sans-serif;
-    /* O tamanho padrão para todo o texto da página, exceto os títulos */
     font-size: var(--p);
 }
 
 header {
-    background: var(--Amarelo) url(imagens/pexels-chrslnz-588776.jpg) center/cover no-repeat;
+    background: var(--Amarelo) url(imagens/pexels-chrslnz-588776.WebP) center/cover no-repeat;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -74,7 +73,6 @@ section {
 .boas-vindas {
     flex: 1;
     text-align: justify;
-    color: var(--AzulClaro);
     max-width: 400px;
     margin: var(--EspaçamentoTexto);
 }
