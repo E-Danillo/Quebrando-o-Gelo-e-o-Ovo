@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br"><head><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+<html lang="pt-br"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
     <title>Quebrando o Gelo (E o ovo)</title>
 </head>
 
 <body>
-    <header>
+    <header id="paginainicial">
         <h1>Quebrando o Gelo <br><span class="destaque">(E o ovo)</span></h1>
         <p>Seu guia culinário</p>
     </header>
@@ -25,34 +26,37 @@
     <section id="contato">
         <div class="coluna-esquerda">
             <h2>Entre em contato</h2>
-            <ul>
-                <li>Rua Alegre, 123, Cidade Brasileira</li>
-                <li>Tel: (12) 3456-7890</li>
-                <li>ola@grandesite.com.br</li>
-            </ul>
-            <h2>Me acompanhe nas redes</h2>
-            <ul>
-                <li><a href="#">📘</a></li>
-                <li><a href="#">📸</a></li>
-                <li><a href="#">▶️</a></li>
+        <ul>
+            <li>Rua Alegre, 123, Cidade Brasileira</li>
+            <li>Tel: (12) 3456-7890</li>
+            <li>ola@grandesite.com.br</li>
+        </ul>
+        <h2>Me acompanhe nas redes</h2>
+            <ul class="redes">
+                <li><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+                <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+                <li><a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube fa-2x"></i></a></li>
+                <li><a href="https://wa.me/5500000000000" target="_blank"><i class="fa-brands fa-whatsapp fa-2x"></i></a></li>
             </ul>
         </div>
-        <div class="coluna-direita"><img src="imagens/contato.png" alt="Ilustração de contatos do site"></div>
+        <div class="coluna-direita">
+            <img src="imagens/contato.png" alt="Ilustração de contatos do site">
+        </div>
     </section>
 
     <section id="menu">
         <ol>
-            <li>Página Inicial</li>
-            <li>Buscar por Receitas</li>
-            <li>Buscar por Ingredientes</li>
-            <li>Sobre Nós</li>
-            <li>Contato</li>
+            <li><a href="#paginainicial">Página Inicial</a></li>
+            <li><a href="#bem-vindo">Apresentação</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#receita">Buscar por Receitas</a></li>
+            <li><a href="#preparo">Buscar por Ingredientes</a></li>
         </ol>
     </section>
 
     <section id="receita">
         <div class ="coluna-esquerda">
-            <a href="https://exemplo" class="botao">Digite a receita</a>
+            <a href="https://exemplo" class="botao">Digite a Receita</a>
             <li>Exemplos de receitas</li>
             <li>Exemplos de receitas</li>
             <li>Exemplos de receitas</li>

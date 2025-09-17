@@ -57,6 +57,7 @@ section {
     display: flex;
     justify-content: center; 
     align-items: center; 
+    width: 100vw;      
     height: 100vh; 
     gap: 5%; 
 }
@@ -98,7 +99,7 @@ section {
 #contato {
     display: flex;
     flex-wrap: wrap;     
-    justify-content: space-around;
+    height: 100vh;     
     align-items: center;  
     padding: 40px 20px;
     background-color: var(--AzulClaro);
@@ -127,15 +128,24 @@ section {
     padding-left: 0;
 }
 
+.redes {
+    display: flex;          
+    gap: 15px; 
+    justify-content: center;
+}
+
 #menu {
+    width: 100vw;      
+    height: 100vh;  
+    display: flex;  
     background-color: var(--AzulEscuro);
 }
 
-#menu ol, #menu li {
+#menu ol, #menu li, #menu a {
     list-style-type: square;
+    text-decoration: none;
     color: var(--Amarelo);
 }
-
 
 #receita a, #receita li{
     list-style: none;
@@ -207,7 +217,7 @@ section {
     box-sizing: border-box;
 }
 
-#ingredientes, #ModoDePreparo {
+#ingredientes, #mododepreparo {
     padding: 10px;
     border: 3px solid var(--CinzaLeitura);
     margin-bottom: 20px; 
