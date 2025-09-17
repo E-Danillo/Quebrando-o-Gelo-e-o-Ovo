@@ -22,18 +22,6 @@ Quebrando o Gelo (E o Ovo) é um site com layout limpo e intuitivo, feito para a
 - Font Awesome para ícones
 - Estrutura modular com seções: #paginainicial, #bem-vindo, #contato, #menu, #receita ing, #preparo
 
-📁 Estrutura de Arquivos
-📦 quebrando-o-gelo
-├── index.html
-├── style.css
-├── imagens/
-│   ├── apresentacao.png
-│   ├── contato.png
-│   ├── exemplo1.jpg
-│   ├── exemplo2.jpg
-│   ├── exemplo3.jpg
-│   └── exemplo4.jpg
-
 🚀 Como Rodar Localmente
 - Clone o repositório:
 git clone https://github.com/seu-usuario/quebrando-o-gelo.git
