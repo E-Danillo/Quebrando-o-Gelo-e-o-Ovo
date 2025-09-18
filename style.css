@@ -11,10 +11,10 @@ html {
 }
 
 :root {
-    --Amarelo: #d1d119;
-    --AzulEscuro: #01337D;
-    --AzulClaro: #19A5FF;
-    --CinzaLeitura: #EDEDED;
+    --AmareloSol: #d1d119;
+    --CafeExpresso: #26120B;
+    --Capuccino: rgb(94, 61, 25);
+    --CinzaAnemico: #EDEDED;
     
     --EspaçamentoTexto: 10px;
     
@@ -24,14 +24,15 @@ html {
 }
 
 body {
-    background-color: var(--Amarelo);
+    background-color: var(--AmareloSol);
+    overflow-x: hidden;
     line-height: 1.5;
     font-family: 'Chau Philomene One', Arial, Helvetica, sans-serif;
     font-size: var(--p);
 }
 
 header {
-    background: var(--Amarelo) url('imagens/background.webp') center/cover no-repeat;
+    background: var(--AmareloSol) url('imagens/background.webp') center/cover no-repeat;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -43,14 +44,14 @@ header {
 header h1 {
     font-size: var(--H1);
     text-transform: uppercase;
-    color: var(--CinzaLeitura);
+    color: var(--CinzaAnemico);
     margin: var(--EspaçamentoTexto);
 }
 
 header p {
     font-size: var(--p);
     margin: var(--EspaçamentoTexto);
-    color: var(--Amarelo);
+    color: var(--AmareloSol);
 }
 
 #blocoinicial {
@@ -73,7 +74,7 @@ header p {
 }
 
 .destaque {
-    color: var(--Amarelo);
+    color: var(--AmareloSol);
 }
 
 section {
@@ -86,7 +87,7 @@ section {
 }
 
 #bem-vindo {
-    background-color: var(--Amarelo);
+    background-color: var(--AmareloSol);
 }
 
 #bem-vindo img {
@@ -125,7 +126,7 @@ section {
     height: 100vh;     
     align-items: center;  
     padding: 40px 20px;
-    background-color: var(--AzulClaro);
+    background-color: var(--Capuccino);
 }
 
 #contato img {
@@ -135,13 +136,13 @@ section {
 }
 
 #contato h2 {
-    color: var(--Amarelo);
+    color: var(--AmareloSol);
     margin: var(--EspaçamentoTexto);
     font-size: var(--H2);
 }
 
 #contato li, #contato a {
-    color: var(--Amarelo);
+    color: var(--AmareloSol);
     text-decoration: none;
 }
 
@@ -161,17 +162,17 @@ section {
     width: 100vw;      
     height: 100vh;  
     display: flex;  
-    background-color: var(--AzulEscuro);
+    background-color: var(--CafeExpresso);
 }
 
 #menu ol, #menu li, #menu a {
     list-style-type: square;
     text-decoration: none;
-    color: var(--Amarelo);
+    color: var(--AmareloSol);
 }
 
 #blocomenu {
-    border: var(--CinzaLeitura) 3px solid;
+    border: var(--CinzaAnemico) 3px solid;
     padding: 40px;
 }
 
@@ -181,14 +182,14 @@ section {
 
 #receita {
     align-items: center;
-    background-color: var(--Amarelo);
+    background-color: var(--AmareloSol);
     margin: var(--EspaçamentoTexto);
     position: relative;
 }
 
 #blocoreceita {
-    background-color: var(--AzulEscuro);
-    color: var(--CinzaLeitura);
+    background-color: var(--CafeExpresso);
+    color: var(--CinzaAnemico);
     border-radius: 10px;
     list-style-type: none;
     max-width: 600px;
@@ -217,26 +218,26 @@ section {
 .botao {
     display: inline-block;
     padding: 10px 20px;
-    background-color: var(--CinzaLeitura);
-    color: var(--AzulEscuro);
+    background-color: var(--CinzaAnemico);
+    color: var(--CafeExpresso);
     text-decoration: none;
     border-radius: 10px;
-    border: var(--AzulEscuro) 3px solid;
+    border: var(--CafeExpresso) 3px solid;
     transition: background-color 0.3s ease;
 }
 
 .botao:hover {
-    background-color: var(--Amarelo);
-    color: var(--AzulEscuro);
+    background-color: var(--AmareloSol);
+    color: var(--CafeExpresso);
 }
 
 .botao.ing:hover {
-    background-color: var(--Amarelo); 
-    color: var(--AzulEscuro);
+    background-color: var(--AmareloSol); 
+    color: var(--CafeExpresso);
 }
 
 #titulo-receita {
-    color: var(--CinzaLeitura);
+    color: var(--CinzaAnemico);
     position: absolute;
     top: 10px;
     right: 20px; 
@@ -253,8 +254,8 @@ section {
 
 #preparo {
     position: relative;
-    background-color: var(--AzulEscuro);
-    color: var(--CinzaLeitura);
+    background-color: var(--CafeExpresso);
+    color: var(--CinzaAnemico);
     padding: 20px;
     border: 3px solid;
     border-radius: 10px;
@@ -265,7 +266,7 @@ section {
 
 #ingredientes, #mododepreparo {
     padding: 10px;
-    border: 3px solid var(--CinzaLeitura);
+    border: 3px solid var(--CinzaAnemico);
     margin-bottom: 20px; 
     padding-left: 30px;
     border-radius: 10px;
@@ -330,7 +331,7 @@ section {
 
     #mododepreparo {
         position: static;
-        border: var(--CinzaLeitura) 3px solid;
+        border: var(--CinzaAnemico) 3px solid;
         margin-top: var(--EspaçamentoTexto);
     }
 }
